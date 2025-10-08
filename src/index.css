@@ -1,18 +1,40 @@
 @import "tailwindcss";
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@custom-variant dark (&:where(.dark, .dark *));
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer base {
+  html{
+    @apply transition-colors duration-300;  
+  }
+  body{
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+  }
 }
 
-
+.carousel {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 92, 246, 0.5) transparent;
+  padding-bottom: 0.25rem;
+}
+.carousel::-webkit-scrollbar {
+  height: 4px;
+}
+.carousel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.carousel::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.5);
+    border-radius: 2px;
+}
+.carousel::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.8);
+}
+.carousel-item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
