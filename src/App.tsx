@@ -43,7 +43,6 @@ export default function App() {
     );
   }
 
-  console.log(projects)
 
   return (
     <div className="min-h-screen text-white">

@@ -9,8 +9,12 @@ interface CardProjectProps {
 
 
 export function CardProject({ project }: CardProjectProps) {
+
+  const projectUrl = project.liveProjectUrl || project.githubUrl;
+
   return (
     <div
+      onClick={() => projectUrl && window.open(projectUrl, "_blank")}
       className="group bg-gradient-to-br from-purple-500/30 to-blue-500/30 
       dark:from-purple-400/40 dark:to-blue-400/40 rounded-2xl p-0.5 hover:scale-105 transition-all duration-300"
     >
