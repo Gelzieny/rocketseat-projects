@@ -1,5 +1,4 @@
 import { Moon, Sun } from "lucide-react";
-import { useEffect, useState } from "react";
 
 import { useTheme } from "./context";
 
@@ -13,7 +12,17 @@ export function Header() {
           onClick={toggleTheme}
           className="absolute top-4 right-6 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
         >
-          {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+          {theme === "dark" ? (
+            <Sun
+              size={20}
+              className="text-yellow-400 hover:text-yellow-300 transition-transform duration-300 hover:rotate-90"
+            />
+          ) : (
+            <Moon
+              size={20}
+              className="text-blue-500 hover:text-blue-400 transition-transform duration-300 hover:rotate-90"
+            />
+          )}
         </button>
 
 
