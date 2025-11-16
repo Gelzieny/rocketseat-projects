@@ -14,7 +14,7 @@ Este repositório reúne uma coleção de aplicações desenvolvidas durante tri
 
 ## 📸 Preview
 
-![Preview do Projeto](./image.png)
+<img src="https://github.com/Gelzieny/rocketseat-projects/blob/main/public/image.png?raw=true" alt="Home do projeto" />
 
 ## ⚙️ Tecnologias Utilizadas
 
