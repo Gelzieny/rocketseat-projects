@@ -1,73 +1,31 @@
-# React + TypeScript + Vite
+<h1 align="center">🌌 Soluções | Projetos Rocketseat</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório reúne uma coleção de aplicações desenvolvidas durante trilhas, eventos e desafios da **Rocketseat**, com foco em:
 
-Currently, two official plugins are available:
+- 🚀 Aprendizado contínuo  
+- 🛠️ Boas práticas de desenvolvimento  
+- ⚡ Evolução constante  
+- 🎨 Criação de interfaces modernas  
+- 🤖 Projetos Web e Terminal  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Acesse o Projeto Online
 
-## React Compiler
+🔗 **URL pública:** [https://rocketseat-projects.vercel.app/](https://rocketseat-projects.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Preview
 
-## Expanding the ESLint configuration
+![Preview do Projeto](./image.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Tecnologias Utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<p align="justify">Este projeto utiliza um conjunto de tecnologias modernas para garantir uma aplicação eficiente e escalável, incluindo:</p>
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- [Vite](https://vitejs.dev/): Ferramenta de build rápida para projetos React.
+- [React](https://react.dev/): Biblioteca JavaScript para construção de interfaces de usuário.
+- [Tailwind CSS](https://tailwindcss.com/): Framework de estilização utilitária para desenvolvimento rápido.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧑‍💻 Autor
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Desenvolvido por **Gelzieny R. Martins**  
+💼 Full Stack Developer | 🚀 Apaixonada por Node.js, Python e DevOps  
+📧 [LinkedIn](www.linkedin.com/in/gelzieny)
